@@ -11,7 +11,7 @@
 body {
   background: #ffffff;
   color: #898989;
-  font-family: 'Poppins', helvetica;
+  font-family: "Poppins", helvetica;
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
@@ -187,7 +187,7 @@ nav {
 nav ul li {
   float: left;
   margin-right: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   margin-left: 40px;
 }
@@ -198,7 +198,7 @@ nav ul li a {
   display: block;
   font-size: 14px;
   color: #999999;
-  font-family: 'Poppins', helvetica;
+  font-family: "Poppins", helvetica;
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
@@ -304,7 +304,7 @@ nav ul li a {
 }
 
 #about .about-descr .p-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 19px;
   text-align: left;
 }
@@ -404,7 +404,7 @@ nav ul li a {
   color: #999999;
   line-height: 16px;
   cursor: pointer;
-  font-family: 'Poppins', helvetica;
+  font-family: "Poppins", helvetica;
   font-weight: 500;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -773,7 +773,6 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (min-width: 768px) and (max-width: 991px) {
-
   /* Navbar */
   nav {
     padding: 10px 15px;
@@ -863,7 +862,6 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (max-width: 767px) {
-
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -952,7 +950,6 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (max-width: 600px) {
-
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -1042,7 +1039,6 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (max-width: 480px) {
-
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -1124,7 +1120,6 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (max-width: 320px) {
-
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -1219,8 +1214,6 @@ blockquote {
   width: auto;
 }
 
-
-
 .download-btn {
   width: 100px;
   height: 35px;
@@ -1232,11 +1225,10 @@ blockquote {
   align-items: center;
   justify-content: center;
   color: #f5f4f4 !important;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   font-size: 11px !important;
   font-weight: 500;
 }
-
 
 .download-btn:hover {
   border: 0px;
@@ -1251,7 +1243,6 @@ blockquote {
   height: 35px;
   margin: 5px 0px;
 }
-
 
 .wrapper {
   font-family: sans-serif;
@@ -1277,10 +1268,10 @@ blockquote {
 
 /* 位置要設相對位置 */
 
-
 .photo img {
   width: 100%;
   height: 255px;
+  object-fit: cover;
   vertical-align: top;
   transition: 0.7s;
 }
@@ -1307,7 +1298,6 @@ blockquote {
   opacity: 0.75;
 }
 
-
 /* 懸浮後會出現的字 */
 /* 原本狀態 */
 .portfolio-info {
@@ -1329,9 +1319,7 @@ blockquote {
   /* 方向由上而下*/
   justify-content: center;
   /* 居中排列 */
-
 }
-
 
 .portfolio-info h4 {
   font-size: 20px;
@@ -1339,12 +1327,10 @@ blockquote {
   font-weight: 600;
 }
 
-
 /* 懸浮後改變透明度 */
 .photo:hover .portfolio-info {
   opacity: 1;
 }
-
 
 /* Blogs */
 .blogs {
@@ -1374,7 +1360,7 @@ blockquote {
   width: 100%;
   height: 262px;
   display: block;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .journal-info:hover .img img {
@@ -1425,8 +1411,8 @@ blockquote {
   text-decoration: none;
   display: inline-block;
   border-bottom: 2px solid #b8a07e;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .journal-info .journal-txt a:hover {
