@@ -38,6 +38,12 @@ h2 {
   font-weight: 600;
 }
 
+h3 {
+  font-size: 24px;
+  color: #292929;
+  font-weight: 600;
+}
+
 h4 {
   color: #292929;
   font-size: 14px;
@@ -74,10 +80,10 @@ nav ul li a {
 }
 
 p {
-  margin: 25px 0;
+  margin: 20px 0;
   padding: 0;
   font-size: 16px;
-  color: #b3b3b3;
+  color: #898989;
   line-height: 28px;
 }
 
@@ -1442,4 +1448,22 @@ blockquote {
 .info p {
   margin: 20px 0 25px 25px;
   color: #b8a07e !important;
+}
+
+/*---------------Portofolio------------------------------------*/
+
+.portfolio-title {
+  color: #b8a07e;
+  margin: 25px 0 0 0;
+  font-size: 70px;
+  line-height: 80px;
+}
+
+.title-decoration {
+  width: 96px;
+  display: block;
+}
+
+.icon-ctrl {
+  color: #b8a07e;
 }
