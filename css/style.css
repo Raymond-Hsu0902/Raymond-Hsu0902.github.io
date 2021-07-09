@@ -226,6 +226,10 @@ nav ul li a {
   margin-left: 15px;
 }
 
+.personal_logo_horizontal{
+  width: 150px;
+  margin-top: 40px;
+}
 .active {
   color: #afafaf;
 }
