@@ -1716,3 +1716,29 @@ border-radius: 10px;
   }
   
 }
+
+
+/*--------------------------------------------------------------
+# graphic
+--------------------------------------------------------------*/
+
+#graphics {
+  height: auto;
+  width: 100%;
+  background: #fff;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.graphic-card-txt p{
+  font-size: 13px;
+  margin: 5px 0 0 0;
+}
+
+.graphic-card-txt h3{
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0px 0 15px;
+  padding: 0;
+}
