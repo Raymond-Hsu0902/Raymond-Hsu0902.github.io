@@ -150,7 +150,6 @@ p {
 
 .paddsection {
   padding-top: 90px;
-  padding-bottom: 90px;
 }
 
 .paddsections {
@@ -396,7 +395,6 @@ nav ul li a {
 --------------------------------------------------------------*/
 #portfolio {
   position: relative;
-  padding-bottom: 50px;
 }
 
 #portfolio .portfolio-list {
@@ -430,7 +428,6 @@ nav ul li a {
 
 #portfolio .portfolio-container {
   display: inline-block;
-  margin-bottom: 50px;
   width: 100%;
 }
 
@@ -1438,6 +1435,7 @@ blockquote {
   background: url("../img/contact-bg.jpg") repeat scroll center center/cover;
   height: auto;
   width: 100%;
+  padding: 60px 0;
 }
 
 .info .address {
