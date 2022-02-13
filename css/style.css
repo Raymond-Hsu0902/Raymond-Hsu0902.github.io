@@ -51,18 +51,16 @@ h4 {
 }
 
 a {
-  color: #292929;
+  color: #b8a07e;
   text-decoration: none !important;
   transition: all 0.5s ease-in-out 0s;
 }
 
-a:hover {
-  transition: all 0.5s ease-in-out 0s;
-}
 
 a:hover,
 a:focus {
-  color: #b8a07e;
+  color: #866d49;
+  transition: all 0.5s ease-in-out 0s;
   text-decoration: underline;
 }
 
@@ -1740,3 +1738,5 @@ border-radius: 10px;
   margin: 0px 0 15px;
   padding: 0;
 }
+
+
