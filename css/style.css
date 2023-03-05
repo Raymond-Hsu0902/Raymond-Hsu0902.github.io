@@ -1364,9 +1364,10 @@ blockquote {
 
 .journal-info .img img {
   width: 100%;
-  height: 262px;
+  height: 250px;
   display: block;
   transition: all 0.5s ease;
+  object-fit: cover;
 }
 
 .journal-info:hover .img img {
@@ -1434,6 +1435,7 @@ blockquote {
   height: auto;
   width: 100%;
   padding: 60px 0;
+  margin-top : 100px;
 }
 
 .info .address {
