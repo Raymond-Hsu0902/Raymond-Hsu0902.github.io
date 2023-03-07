@@ -1742,3 +1742,7 @@ border-radius: 10px;
 }
 
 
+.img-fluid{
+  max-width:80%;
+  height: auto;
+}
