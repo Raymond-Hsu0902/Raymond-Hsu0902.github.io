@@ -1449,17 +1449,17 @@ blockquote {
 }
 
 .info p {
-  margin: 20px 0 25px 25px;
+  margin: 5px 0 25px 25px;
   color: #b8a07e !important;
 }
 
 /*---------------Portofolio------------------------------------*/
 
 .portfolio-title {
-  color: #b8a07e;
+  color: #866d49;
   margin: 25px 0 0 0;
-  font-size: 70px;
-  line-height: 80px;
+  font-size: 50px;
+  line-height: 110%;
 }
 
 .title-decoration {
