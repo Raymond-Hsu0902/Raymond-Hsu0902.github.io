@@ -1747,6 +1747,16 @@ border-radius: 10px;
   height: auto;
 }
 
+@media (max-width:480px) {
+  .img-fluid{
+    max-width:100%;
+    height: auto;
+  }
+  .portfolio-title{
+    font-size: 40px;
+  }
+}
+
 .highlight{
   background: linear-gradient( to bottom, transparent 50%, #b8a07e90 50% );
   background-repeat: no-repeat;
@@ -1754,4 +1764,17 @@ border-radius: 10px;
 }
   
 
+/* iframe */
 
+.iframe_rmd {
+  width :100% ;
+  height:500px;
+}
+
+@media (max-width:480px){
+  .iframe_rmd{
+    width :100% ;
+    height:1000px;
+  }
+
+}
