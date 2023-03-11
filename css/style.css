@@ -1746,3 +1746,12 @@ border-radius: 10px;
   max-width:80%;
   height: auto;
 }
+
+.highlight{
+  background: linear-gradient( to bottom, transparent 50%, #b8a07e90 50% );
+  background-repeat: no-repeat;
+  background-size: auto 40px;
+}
+  
+
+
