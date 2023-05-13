@@ -72,11 +72,11 @@
 
         .protected__content__input:focus {
             outline: none;
-            border-color: #228843;
+            border-color: #B8A07E;
         }
 
         .protected__content__btn {
-            background-color: #228843;
+            background-color: #B8A07E;
             border-radius: 3px;
             cursor: pointer;
             border: none;
@@ -89,7 +89,7 @@
         }
 
         .protected__content__btn:hover {
-            background-color: #1C6D36;
+            background-color: #866d49;
         }
     </style>
 
@@ -98,11 +98,11 @@
 <body>
 
     <div class="protected">
-        <div class="protected__alert" data-id="alert">You entered the wrong password</div>
+        <div class="protected__alert" data-id="alert">密碼錯誤</div>
         <div class="protected__content">
-            <h1 class="protected__content__heading">You need a password to continue</h1>
-            <input class="protected__content__input" data-id="password" type="password" placeholder="password" />
-            <button data-id="button" type="button" class="protected__content__btn">Continue</button>
+            <h1 class="protected__content__heading">請輸入密碼</h1>
+            <input class="protected__content__input" data-id="password" type="password" placeholder="請輸入密碼...." />
+            <button data-id="button" type="button" class="protected__content__btn">送出</button>
         </div>
     </div>
 
@@ -114,7 +114,7 @@
 
         function login(secret) {
             var hash = sha1(secret)
-            var url = hash + "/index.html"
+            var url = hash + "/sinyi_system.html"
             var alert = document.querySelectorAll('[data-id="alert"]')
 
             var request = new XMLHttpRequest()
