@@ -3,10 +3,19 @@
 
 <head>
     <title>Password Protected</title>
+    <!-- Vendor CSS Files -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/hover/hover.min.css" rel="stylesheet">
+    <link href="/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- Template Main CSS File -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-
     <style>
         *,
         *:after,
@@ -21,10 +30,10 @@
             font-size: 16px;
             background: #f2f2f2;
             color: #2D3737;
-            display: flex;
+            /* display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 100%;
+            min-height: 100%; */
         }
 
         .protected {
@@ -32,12 +41,12 @@
             -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
             border-radius: 3px;
-            min-width: 500px;
+            max-width: 500px;
 
         }
 
         .protected__content {
-            padding: 24px 28px;
+            /* padding: 24px 28px; */
         }
 
         .protected__content__heading {
@@ -77,37 +86,90 @@
 
         .protected__content__btn {
             background-color: #B8A07E;
-            border-radius: 3px;
             cursor: pointer;
             border: none;
-            color: #fff;
-            padding: 12px 14px;
+            color: #f5f4f4;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
             font-weight: 500;
             font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 35px;
 
         }
 
-        .protected__content__btn:hover {
+        .protected__content__btn:hover:enabled {
             background-color: #866d49;
+        }
+
+        .crypt_image {
+            height: auto;
+            width: 40%;
+            max-width: 250px;
+        }
+
+        .form__input {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .form__input span {
+            position: absolute;
+            right: 15px;
+            font-size: 26px;
+            top: 10px;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        .form__input span:hover {
+            opacity: 1;
+        }
+
+        button:disabled,
+        button[disabled] {
+            background-color: #cccccc;
+            color: #fff;
+            cursor: not-allowed;
         }
     </style>
 
 </head>
 
 <body>
-
-    <div class="protected">
-        <div class="protected__alert" data-id="alert">密碼錯誤</div>
-        <div class="protected__content">
-            <h1 class="protected__content__heading">請輸入密碼</h1>
-            <input class="protected__content__input" data-id="password" type="password" placeholder="請輸入密碼...." />
-            <button data-id="button" type="button" class="protected__content__btn">送出</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-12 text-center">
+                <img class="crypt_image mt-3 mb-3" src="/protected/crypt_image.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+                <div class="protected py-3 px-4 mx-auto ">
+                    <div class="protected__alert" data-id="alert">密碼錯誤</div>
+                    <div class="protected__content mt-2">
+                        <h1 class="protected__content__heading">請輸入密碼</h1>
+                        <div class="form__input">
+                            <input class="protected__content__input" data-id="password" type="password"
+                                placeholder="請輸入密碼...." id="textsend" onkeyup="success()" />
+                            <span class="fa fa-eye-slash"></span>
+                        </div>
+                        <button data-id="button" type="submit" class="protected__content__btn" id="button"
+                            disabled>送出</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js"></script>
     <script type="text/javascript">
+        // 密碼鎖
         "use strict"
         var button = document.querySelectorAll('[data-id="button"]')
         var password = document.querySelectorAll('[data-id="password"]')
@@ -149,6 +211,38 @@
                 login(password[0].value)
             }
         }
+    </script>
+    <script>
+        //顯示密碼
+        const triggerPassword = document.querySelector('.fa-eye-slash');
+
+        const showPassword = trigger => {
+            trigger.addEventListener('click', () => {
+                if (trigger.previousElementSibling.getAttribute('type') === 'password') {
+                    trigger.previousElementSibling.setAttribute('type', 'text');
+                    trigger.classList.remove('fa-eye-slash');
+                    trigger.classList.add('fa-eye');
+                } else if (trigger.previousElementSibling.getAttribute('type') === 'text') {
+                    trigger.previousElementSibling.setAttribute('type', 'password');
+                    trigger.classList.remove('fa-eye');
+                    trigger.classList.add('fa-eye-slash');
+                }
+            });
+        }
+
+        showPassword(triggerPassword);
+    </script>
+    <script>
+        //disabled button
+        document.querySelector(".button").disabled = true;;
+        function success() {
+            if (document.getElementById("textsend").value === "") {
+                document.getElementById('button').disabled = true;
+            } else {
+                document.getElementById('button').disabled = false;
+            }
+        }
+
     </script>
 </body>
 
