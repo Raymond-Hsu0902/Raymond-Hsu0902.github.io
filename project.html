@@ -20,11 +20,11 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/hover/hover.min.css" rel="stylesheet">
-  <link href="vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/hover/hover.min.css" rel="stylesheet">
+  <link href="/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Template Main CSS File -->
@@ -44,7 +44,7 @@
 <body>
 
   <!-- ======= Navbar ======= -->
-  <nav id="main-nav">
+  <nav id="main-nav" class="p-0">
     <div class="row">
       <div class="container my-2">
         <a href="/index.html"><img class="personal_logo" src="img/Personal_logo_normal_3x.png" alt=""></a>
@@ -57,13 +57,24 @@
       </div>
     </div>
   </nav>
+
   <!-- End Navbar -->
   <div id="" class="home">
+    <div class="row nav_fixed">
+      <div class="container my-2">
+        <a href="/index.html"><img class="personal_logo" src="img/Personal_logo_normal_3x.png" alt=""></a>
+        <ul class="nav-menu list-unstyled">
+          <li><a href="/index.html" class="smoothScroll">Home</a></li>
+          <li><a href="/about.html" class="smoothScroll">About</a></li>
+          <li><a href="/project.html" class="smoothScroll">Project</a></li>
+        </ul>
+      </div>
+    </div>
 
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <p class="portfolio-title">Project</p>
+          <p class="portfolio-title mt-0">Project</p>
           <div class="d-flex">
             <p><a href="/index.html">首頁</a></p>
             <p class="px-2"> » </p>
@@ -400,7 +411,8 @@
 
         <ul class="list-unstyled">
           <li><a href="https://www.facebook.com/raymond.hsu.5648"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="https://www.instagram.com/koala_minccino/?hl=zh-tw"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="https://www.instagram.com/koala_minccino/?hl=zh-tw"><i class="ion-social-instagram"></i></a>
+          </li>
 
         </ul>
 
@@ -426,15 +438,15 @@
   </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="vendor/php-email-form/validate.js"></script>
-  <script src="vendor/typed/typed.js"></script>
-  <script src="vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="vendor/venobox/venobox.min.js"></script>
-  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
+  <script src="/vendor/typed/typed.js"></script>
+  <script src="/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/venobox/venobox.min.js"></script>
+  <script src="/vendor/owl.carousel/owl.carousel.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="js/main.js"></script>
