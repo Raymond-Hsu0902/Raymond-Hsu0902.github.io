@@ -1427,6 +1427,24 @@ blockquote {
   border-color: #866d49;
 }
 
+
+.seemore {
+  font-size: 14px;
+  color: #b8a07e;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid #b8a07e;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.seemore:hover {
+  color: #866d49;
+  border-color: #866d49;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
