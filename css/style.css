@@ -1242,6 +1242,10 @@ blockquote {
   width: auto;
 }
 
+.icon_medium{
+  font-size: 18px;
+}
+
 .download-btn {
   width: 100px;
   height: 35px;
@@ -1627,6 +1631,10 @@ background: #b8a07e;
 
 .line3{
   height:200px;
+}
+
+.line4{
+  height:262px;
 }
 .cards{
 margin-left:12px;
