@@ -27,18 +27,17 @@
   <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
+  <link rel="stylesheet" href="css/slider.css">
+
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Folio - v2.0.1
-  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-
-  <!-- icon -->
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
 
 </head>
 
@@ -118,6 +117,106 @@
         </div>
       </div>
     </div><!-- End About Section -->
+
+    <section class="spacer d-sm-none d-lg-block">
+
+      <div class="testimonial-section">
+        <div class="testi-user-img">
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="u3" src="/img/volunteer/D2 workshop.svg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="u1" src="/img/volunteer/persona workshop.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="u2" src="/img/volunteer/IWD.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img class="u4" src="/img/volunteer/WA project.png" alt="">
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="user-saying">
+          <div class="swiper-container testimonial">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper ">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="quote">
+                  <img class="quote-icon" src="/img/volunteer/icon.svg" alt="">
+                  <div class="designation mb-3">WTM Volunteer</div>
+
+                  <p>
+                    “D2 工作坊是一個軟體設計師 (UX & UI Designers) 與工程師 (Developers) 的實戰工作坊。“
+                  </p>
+                  <div class="name">D2 Workshop-活動主辦</div>
+
+
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="quote">
+                  <img class="quote-icon" src="/img/volunteer/icon.svg" alt="">
+                  <div class="designation mb-3">WTM Volunteer</div>
+
+                  <p>
+                    【GDSC TMU x WTM | UIUX進階講座：解密業界設計流程與案例分享】
+                    介紹UX 設計師思維與Persona工具，並帶領Persona工作坊，從實作中了解工具運用
+                  </p>
+                  <div class="name">Persona workshop-講者</div>
+
+
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="quote">
+                  <img class="quote-icon" src="/img/volunteer/icon.svg" alt="">
+                  <div class="designation mb-3">WTM Volunteer</div>
+
+                  <p>
+                    “WTM International Women's Day Affinity Diagram workshop：如何使用親和圖(Affinity Diagram)收斂混亂資料與
+                    親和圖的使用時機和工具介紹“
+                  </p>
+                  <div class="name">Affinity Diagram workshop-Facilitator</div>
+
+
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="quote">
+                  <img class="quote-icon" src="/img/volunteer/icon.svg" alt="">
+                  <div class="designation mb-3">WTM Volunteer</div>
+
+                  <p>
+                    “WA賽Project! 作品集養成計劃，是由AgileGirls與Women Techmakers
+                    (WTM)共同合作的一項導師計劃。主要目的為協助需要有作品集的學員，在8週以敏捷(Scrum)開發流程方式，且透過工作坊與階段性諮詢等，並在4個Sprint指導下完成Redesign產品交付。“
+                  </p>
+                  <div class="name">WA賽Project-Facilitator</div>
+
+
+                </div>
+              </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- ======= Services Section ======= -->
     <div id="services">
@@ -483,6 +582,50 @@
   </div><!-- End Footer -->
 
   <!-- Vendor JS Files -->
+
+  <script src="https://md-aqil.github.io/images/swiper.min.js"></script>
+  <script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: '2',
+      // coverflowEffect: {
+      //   rotate: 50,
+      //   stretch: 0,
+      //   depth: 100,
+      //   modifier: 1,
+      //   slideShadows : true,
+      // },
+
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 50,
+        modifier: 6,
+        slideShadows: false,
+      },
+
+    });
+
+
+    var galleryTop = new Swiper('.swiper-container.testimonial', {
+      speed: 400,
+      spaceBetween: 50,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      direction: 'vertical',
+      pagination: {
+        clickable: true,
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
 
   </script>
 
