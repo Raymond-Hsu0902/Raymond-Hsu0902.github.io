@@ -1613,7 +1613,7 @@ background: #b8a07e;
 }
 
 .line{
-  height:103px;
+  height:-69px;
   width:2px;
   background: #c5ac88;
   margin-left:5.3px;
@@ -1634,6 +1634,10 @@ background: #b8a07e;
 }
 
 .line4{
+  height:262px;
+}
+
+.line5{
   height:262px;
 }
 .cards{
